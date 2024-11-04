@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mehmet-service
+  namespace: mehmet
 spec:
   selector:
     app: my-dockerhub-app
@@ -9,6 +10,6 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30001  # Port numarasını 30000 olarak ayarlıyoruz, isteğe göre değiştirilebilir
+      nodePort: 30001  
   type: NodePort
 
