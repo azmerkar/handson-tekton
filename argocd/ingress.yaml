@@ -10,7 +10,7 @@ spec:
   - host: myapp.localhost  # Local ortamda kullanmak için bir host belirle
     http:
       paths:
-      - path: /mehmet
+      - path: /
         pathType: Prefix
         backend:
           service:
