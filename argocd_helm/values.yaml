@@ -1,0 +1,13 @@
+# values.yaml
+image:
+  repository: <DockerHub_KullanıcıAdı>/<İmaj_Adı>  # Docker Hub'daki imajını buraya ekle
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort  # NodePort olarak ayarlıyoruz
+  port: 80
+  nodePort: 30000  # Erişim sağlamak için belirlediğimiz NodePort
+
+ingress:
+  enabled: false  # Ingress kullanmıyoruz

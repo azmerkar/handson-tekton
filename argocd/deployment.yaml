@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: nginx:latest  # Docker Hub'dan Nginx imajını çekiyor
+        image: mekar43/tekton:latest
         ports:
         - containerPort: 80
