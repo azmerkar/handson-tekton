@@ -6,7 +6,9 @@ spec:
   selector:
     app: my-dockerhub-app
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  type: ClusterIP
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30000  # Port numarasını 30000 olarak ayarlıyoruz, isteğe göre değiştirilebilir
+  type: NodePort
+
