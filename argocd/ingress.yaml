@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: mehmet-ingress
+  namespace: mehmet
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -9,7 +10,7 @@ spec:
   - host: myapp.localhost  # Local ortamda kullanmak için bir host belirle
     http:
       paths:
-      - path: /
+      - path: /mehmet
         pathType: Prefix
         backend:
           service:
