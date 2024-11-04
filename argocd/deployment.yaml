@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mehmet-app
+  labels:
+    app: my-dockerhub-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-dockerhub-app
+  template:
+    metadata:
+      labels:
+        app: my-dockerhub-app
+    spec:
+      containers:
+      - name: my-app-container
+        image: nginx:latest  # Docker Hub'dan Nginx imajını çekiyor
+        ports:
+        - containerPort: 80
