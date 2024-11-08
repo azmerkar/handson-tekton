@@ -1,7 +1,6 @@
-# Hands-On Tekton
+## Hands-On Tekton
 
 ## Requirements
-
 * [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) -OR- [Katacoda Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)
 * [tkn](https://github.com/tektoncd/cli)
 * (Optional) [VS Code Tekton extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-tekton-pipelines)
